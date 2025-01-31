@@ -1,0 +1,131 @@
+body {
+    font-family:"Arial",sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    display: block ;
+  }
+  
+  .invoice-container {
+    width: 850px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    
+  }
+  
+  th {
+    text-align: center;
+  }
+  
+  .header {
+    
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 1px solid black;
+  }
+  
+  table th,
+  table td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid black; /* Add border to each table cell */
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  
+  .totals-section table td {
+    text-align: right;
+  }
+  
+  h1 {
+    border: 1px solid black;
+    background-color: rgb(198, 197, 197);
+    padding: 5px;
+  }
+  
+  .header p {
+    border: 1px solid black;
+    font-weight: 900;
+    margin-top: 0px;
+    text-align: left;
+    font-size: larger;
+    margin-bottom: 0px;
+  }
+  
+  .box2 {
+    padding-left: 50px;
+    background-color:rgb(198, 197, 197) ;
+  }
+  .box3 {
+    border: none;
+    text-align: center;
+  }
+  
+  .box tr, th, td {
+    padding: 0;
+    font-size: x-small;
+  }
+  
+  /* Remove border from the 3rd column (Country) only */
+  table td:nth-child(3), 
+  table th:nth-child(3) {
+    border-right: none;
+  }
+  
+  .tax {
+    border: 1px solid black;
+  }
+  
+  .tax1, .tax2 , .tax3{
+   
+    font-weight: 900;
+  }
+  
+  
+  .product {
+    background-color:rgb(198, 197, 197) ;
+  }
+  
+  .hsn12  {
+    text-align: center;
+    background-color:rgb(198, 197, 197) ;
+  }
+  
+  hr {
+    border: 1px solid black;
+    
+  }
+  
+  .box-3 {
+    padding-right:360px;
+    background-color:rgb(198, 197, 197) ;
+    border: none;
+   
+  }
+  .gst-rate {
+    appearance: none; 
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: inherit;
+    outline: none;
+  }
+  
+
+  
+  
