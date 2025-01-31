@@ -6,7 +6,10 @@ body {
     box-sizing: border-box;
     display: block ;
   }
-  
+  /* .main-conatiner{
+    background-color: aquamarine;
+    padding: 20px;
+  } */
   .invoice-container {
     width: 850px;
     margin: 20px auto;
