@@ -5,11 +5,23 @@ body {
     background-color: #f8f8f8;
     box-sizing: border-box;
     display: block ;
+    line-height: 20px;
   }
-  /* .main-conatiner{
-    background-color: aquamarine;
-    padding: 20px;
-  } */
+  @font-face {
+    font-family: Roboto-Bold;
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: Roboto-Medium;
+    src: url(./fonts/Roboto/Roboto-Medium.ttf);
+  }
+  .main-conatiner{
+    display: flex;
+    align-items:last baseline;
+    max-width: 100%;
+    margin: auto;
+    padding: 0px 15px;
+  }
   .invoice-container {
     width: 850px;
     margin: 20px auto;
@@ -30,6 +42,7 @@ body {
   .header h1 {
     margin: 0;
     font-size: 24px;
+    font-family: Roboto-Bold;
   }
   
   table {
@@ -66,8 +79,11 @@ body {
     text-align: left;
     font-size: larger;
     margin-bottom: 0px;
+    font-family: Roboto-Bold;
+    padding: 8px;
+
   }
-  
+ 
   .box2 {
     padding-left: 50px;
     background-color:rgb(198, 197, 197) ;
@@ -128,6 +144,8 @@ body {
     font-size: inherit;
     outline: none;
   }
+
+  
   
 
   
