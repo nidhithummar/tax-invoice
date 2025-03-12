@@ -719,27 +719,29 @@
 
     document.getElementById("generatePDF").addEventListener("click", function () {
       const { jsPDF } = window.jspdf;
-
+    
       const content = document.querySelector("#content");
-
+    
       html2canvas(content, {
-        scale: 3,
-        useCORS: true
+          scale: 1.5, // Reduce scale to decrease image size
+          useCORS: true
       }).then(canvas => {
-        const pdf = new jsPDF({
-          orientation: 'p',
-          unit: 'mm',
-          format: 'a4'
-        });
-
-        const imgData = canvas.toDataURL("image/png");
-        const imgWidth = 210;
-        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-        pdf.addImage(imgData, 'PNG', 0, 10, imgWidth, imgHeight);
-        pdf.save("Tax-Invoice.pdf");
+          const pdf = new jsPDF({
+              orientation: 'p',
+              unit: 'mm',
+              format: 'a4',
+              compress: true // Enable compression (if supported)
+          });
+    
+          const imgData = canvas.toDataURL("image/jpeg", 0.5); // Convert to JPEG with quality 0.5
+          const imgWidth = 210; // A4 width in mm
+          const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    
+          pdf.addImage(imgData, 'JPEG', 0, 10, imgWidth, imgHeight);
+          pdf.save("Tax-Invoice.pdf");
       });
-    });
+  });
+  
   </script>
 
 </body>

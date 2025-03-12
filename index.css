@@ -142,10 +142,13 @@ body {
     text-align: center;
     cursor: pointer;
     font-size: inherit;
-    outline: none;
-  }
+    outline: none;
+    height: 20px; /* Ensures enough space for the text */
+    line-height: 1.5; /* Improves text visibility */
+    vertical-align: middle; /* Ensures text is centered */
+}
 
-  
+
   
 
   
